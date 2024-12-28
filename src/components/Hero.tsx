@@ -27,9 +27,9 @@ const useModernTypewriter = (words: string[], switchDelay: number = 3000) => {
 
 export default function Hero() {
   const { displayWord, isGlitching } = useModernTypewriter([
-    'vendedor',
-    'SDR',
-    'atendente'
+    'Vendedor',
+    'Colaborador',
+    'Atendente'
   ], 1500);
 
   return (
@@ -50,7 +50,7 @@ export default function Hero() {
               <Bot className="w-6 h-6" />
               <span className="text-green-100 font-medium">Plataforma produzida por Global Live</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
               Clone seu melhor{' '}
               <span 
                 className={`word-animation ${isGlitching ? 'glitch' : ''}`}
@@ -60,7 +60,7 @@ export default function Hero() {
               </span>{' '}
               com IA
             </h1>
-            <p className="text-xl text-green-100 mb-8">
+            <p className="text-lg sm:text-xl text-green-100 mb-8">
               Uma plataforma OmniChannel que conecta e automatiza seus processos comerciais, de suporte e financeiros com um Agente de IA que trabalha incansavelmente para o sucesso do seu negócio.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
@@ -76,12 +76,12 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="relative">
-            <div className="relative z-10 bg-white/5 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/10">
+          <div className="relative mt-8 lg:mt-0">
+            <div className="relative z-10 bg-white/5 backdrop-blur-lg rounded-2xl p-4 sm:p-6 shadow-2xl border border-white/10">
               <img
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80"
                 alt="Platform Dashboard"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg w-full"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#28B45D] to-[#34d070] blur-3xl opacity-20 -z-10"></div>
